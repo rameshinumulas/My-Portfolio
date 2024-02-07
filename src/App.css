@@ -45,7 +45,6 @@
   border-radius: 5px;
 
   background-color: rgb(233 171 88 / 50%);
-  padding: 1em;
   color: #d9480f;
 }
 .main_layout{
@@ -85,4 +84,19 @@
 
 .side-bar-details{
   padding: 0px 20px;
+}
+.route-names-div{
+  border: 2px solid black;
+  position: absolute;
+  right: 3.2rem;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  background-color: black;
+}
+.route-title{
+  font-size: 1.2rem;
+  padding-left: 30px;
+  text-decoration: none;
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import SideBar from './SideBar'
+import ContentBar from './ContentBar'
 
 export default function MainLayout() {
   return (
@@ -10,7 +11,7 @@ export default function MainLayout() {
           <SideBar />
         </div>
         <div className='content-bar'>
-          <h3>content bar</h3>
+          <ContentBar />
         </div>
       </div>
     </div>
