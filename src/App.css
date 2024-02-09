@@ -100,3 +100,21 @@
   padding-left: 30px;
   text-decoration: none;
 }
+
+.content-position{
+  position: absolute;
+  top: 4rem;
+  left: 28rem;
+  width: 57%;
+  padding: 20px;
+}
+
+.hire-cv-div-buttons{
+  display: flex;
+  justify-content: end;
+  padding: 50px;
+}
+.hire-cv-btn{
+  padding: 15px;
+  border-radius: 10%;
+}
