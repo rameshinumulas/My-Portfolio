@@ -1,6 +1,6 @@
 import React from 'react'
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
+import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
+import 'pure-react-carousel/dist/react-carousel.es.css';
 import antdIcon from '../icons/antd.png'
 import awsS3Icon from '../icons/awss3.png'
 import cssIcon from '../icons/css.png'
@@ -47,7 +47,27 @@ export default function About() {
       </div>
       <div>
         <h2>Tech Stack</h2>
-        <Carousel
+        <CarouselProvider
+          naturalSlideWidth={500}
+          naturalSlideHeight={500}
+          totalSlides={11}
+          isPlaying
+          interval={1000}
+          visibleSlides={8}
+        >
+        <Slider>
+          {techStackPics.map((eachStack, index) => (
+            <Slide index={index}>
+            <div>
+              <img src={eachStack} alt='use-stack' style={{ width: '100px', height: '70px', objectFit:'contain' }} />
+            </div>
+            </Slide>
+          ))}
+        </Slider>
+        <ButtonBack>Back</ButtonBack>
+        <ButtonNext>Next</ButtonNext>
+        </CarouselProvider>
+        {/* <Carousel
           autoPlay
           thumbWidth={100}
           transitionTime={2}
@@ -57,10 +77,9 @@ export default function About() {
           {techStackPics.map(eachStack => (
             <div>
               <img src={eachStack} alt='use-stack' style={{ width: '100px', height: '70px', objectFit:'contain' }} />
-              {/* <p className="legend">Legend 1</p> */}
             </div>
           ))}
-        </Carousel>
+        </Carousel> */}
       </div>
     </div>
   )
