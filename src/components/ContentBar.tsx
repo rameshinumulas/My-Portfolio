@@ -37,7 +37,7 @@ export default function ContentBar() {
           <div className='route-title'>
           <NavLink
             to={eachRoute.usepath}
-            style={{ textDecoration: 'none' }}
+            style={{ textDecoration: 'none', color: '#fff' }}
           >
             {eachRoute.title}
           </NavLink>
