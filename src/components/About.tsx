@@ -57,29 +57,14 @@ export default function About() {
         >
         <Slider>
           {techStackPics.map((eachStack, index) => (
-            <Slide index={index}>
-            <div>
-              <img src={eachStack} alt='use-stack' style={{ width: '100px', height: '70px', objectFit:'contain' }} />
+            <Slide index={index}> 
+            <div className='slider-images'>
+              <img src={eachStack} alt='use-stack' className='carousel-image' />
             </div>
             </Slide>
           ))}
         </Slider>
-        <ButtonBack>Back</ButtonBack>
-        <ButtonNext>Next</ButtonNext>
         </CarouselProvider>
-        {/* <Carousel
-          autoPlay
-          thumbWidth={100}
-          transitionTime={2}
-          useKeyboardArrows={false}
-          interval={1000}
-        >
-          {techStackPics.map(eachStack => (
-            <div>
-              <img src={eachStack} alt='use-stack' style={{ width: '100px', height: '70px', objectFit:'contain' }} />
-            </div>
-          ))}
-        </Carousel> */}
       </div>
     </div>
   )
