@@ -1,19 +1,19 @@
 import React from 'react'
-
+import portfolio from '../icons/portfolio-pic.webp';
 export default function SideBar() {
   return (
     <div className='side-bar-avatar'>
-      <img src="https://img.freepik.com/premium-vector/young-man-face-avater-vector-illustration-design_968209-13.jpg"
+      <img src={portfolio}
         alt='profile-avatar'
         className='avatar-sty'
       />
       <div className='side-bar-details'>
-        <h3>Ramesh Inumula</h3>
-        <p>React js Developer</p>
+        <h3 className='text-style'>Ramesh Inumula</h3>
+        <p className='text-style-p'>Front-end Developer</p>
       </div>
       <div className='side-bar-details'>
-        <p>Email:</p>
-        <span>inumularamesh@gmail.com</span>
+          <p>Email:</p>
+          <span>inumularamesh@gmail.com</span>
       </div>
       <div className='side-bar-details'>
         <p>Phone:</p>

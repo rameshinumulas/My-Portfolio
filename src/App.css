@@ -1,5 +1,5 @@
 .App {
-  background-color: #282c34;
+  background-image: radial-gradient( circle 976px at 51.2% 51%,  rgba(11,27,103,1) 0%, rgba(16,66,157,1) 0%, rgba(11,27,103,1) 17.3%, rgba(11,27,103,1) 58.8%, rgba(11,27,103,1) 71.4%, rgba(16,66,157,1) 100.2%, rgba(187,187,187,1) 100.2% );
   width: 100%;
   height: 100%;
   color: white;
@@ -41,18 +41,18 @@
 } */
 
 .main_layout > div {
-  border: 2px solid rgb(233 171 88);
-  border-radius: 5px;
+  border: 1px solid rgb(169 188 232);
+  border-radius: 20px;
 
-  background-color: rgb(233 171 88 / 50%);
-  color: #d9480f;
+  /* background-color: rgb(233 171 88 / 50%);
+  color: #d9480f; */
 }
 .main_layout{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   padding: 3rem;
-  min-height: 1000px;
+  min-height: 750px;
 }
 
 .side-bar{
@@ -65,20 +65,18 @@
 }
 .side-bar-avatar{
   padding: 20px;
-  background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
   display: flex;
   flex-direction: column;
-  align-items:flex-start;
+  align-items:center;
   color: #fff;
-  p{
-    margin: 0px !important;
-  }
 }
 
 .avatar-sty{
-  width: 300px;
-  height: 150px;
-  object-fit: contain;
+  width: 16rem;
+  height: 12rem;
+  object-fit: cover;
+  background-color:rgb(102 117 190) !important;
+  border-radius: 20px;
 
 }
 
@@ -117,4 +115,20 @@
 .hire-cv-btn{
   padding: 15px;
   border-radius: 10%;
+}
+
+.text-style {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  margin-bottom: 14px;
+}
+.text-style-p{
+  font-size: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  background-color:rgb(102 117 190) !important;
+  border-radius: 8px;
+  width: 14rem;
+  margin: 0px 1rem !important;
+  height: 1.6rem;
 }
